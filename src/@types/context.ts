@@ -1,6 +1,6 @@
 import { Dispatch } from 'react';
 
-export type ActionType = 'SET_INITIAL';
+export type ActionType = 'SET_INITIAL' | 'SET_MODE';
 
 export interface InitialState {
   mode?: string;

@@ -6,6 +6,7 @@
     "start": "next start",
     "lint": "next lint --dir src",
     "test": "jest",
+    "test:watch": "jest --watch",
     "readme": "node ./script/readme.js"
   },
   "dependencies": {
