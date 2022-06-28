@@ -11,10 +11,7 @@ function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className="title">
-          Welcome to
-          <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+        <h1 className="title">Welcome to Next.js!</h1>
 
         <p className={styles.description}>
           Get started by editing

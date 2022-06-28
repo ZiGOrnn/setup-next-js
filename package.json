@@ -5,6 +5,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint --dir src",
+    "test": "jest",
     "readme": "node ./script/readme.js"
   },
   "dependencies": {
