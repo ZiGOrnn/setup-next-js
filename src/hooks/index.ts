@@ -1,3 +1,3 @@
-import useResize from "./useResize";
+import useResize from './useResize';
 
 export { useResize };

@@ -3,7 +3,7 @@ const fs = require("fs");
 
 const url =
   "https://raw.githubusercontent.com/airbnb/javascript/master/README.md";
-const path = "./STANDARD.md";
+const path = "./README.md";
 
 const main = async () => {
   const { data } = await axios.get(url);

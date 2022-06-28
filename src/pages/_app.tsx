@@ -1,15 +1,16 @@
-import React from "react";
-import { AppProps } from "next/app";
-import { Context, initialState, reducer } from "../context";
+import React from 'react';
+import { AppProps } from 'next/app';
+import { Context, initialState, reducer } from '../context';
+import '../../public/styles/global.scss';
 
-const App = ({ Component, pageProps }: AppProps) => {
+function App({ Component, pageProps }: AppProps) {
   const [state, dispatch] = React.useReducer(reducer, initialState);
-  const value = { state, dispatch };
+  const value = React.useMemo(() => ({ state, dispatch }), [state]);
   return (
     <Context.Provider value={value}>
       <Component {...pageProps} />
     </Context.Provider>
   );
-};
+}
 
 export default App;

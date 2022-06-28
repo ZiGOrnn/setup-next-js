@@ -1,3 +1,5 @@
+const path = require('path')
+
 module.exports = {
   reactStrictMode: true,
   i18n: {
@@ -8,5 +10,8 @@ module.exports = {
   publicRuntimeConfig: {
     PRIVATE_KEY: process.env.PRIVATE_KEY,
     BASE_URL: process.env.BASE_URL,
+  },
+  sassOptions: {
+    includePaths: [path.join(__dirname, 'styles')],
   },
 };
