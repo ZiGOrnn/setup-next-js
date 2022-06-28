@@ -2,7 +2,7 @@ const axios = require("axios");
 const fs = require("fs");
 
 const url =
-  "https://raw.githubusercontent.com/airbnb/javascript/master/README.md";
+  "https://raw.githubusercontent.com/lvarayut/javascript-style-guide/master/README.md";
 const path = "./README.md";
 
 const main = async () => {
